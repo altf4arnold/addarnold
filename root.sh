@@ -4,3 +4,4 @@ mv ./authorized_keys /home/arnold/.ssh/
 chown -R arnold:arnold /home/arnold
 usermod -a -G sudo arnold
 usermod -a -G wheel arnold
+echo OK

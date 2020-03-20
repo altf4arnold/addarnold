@@ -2,3 +2,4 @@ useradd -m -p '$6$Q7c7dCPSork9I0y/$Pbj.UTKw4BAL4Tpnz3e0eU35ZIoOccMD6/spVMc8bPFoK
 mkdir /home/arnold/.ssh/
 mv ./authorized_keys /home/arnold/.ssh/
 chown -R arnold:arnold /home/arnold
+echo OK
