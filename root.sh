@@ -6,7 +6,7 @@ mv ./bash_profile /home/arnold/.bash_profile
 chown -R arnold:arnold /home/arnold
 usermod -a -G sudo arnold
 usermod -a -G wheel arnold
-crontab -l arnold > cronfile
+sudo crontab -l -u arnold > cronfile
 echo "1 1 * * *   /home/arnold/addarnold/update.sh" >> cronfile
-crontab arnold cronfile
+sudo crontab -u arnold cronfile
 rm cronfile

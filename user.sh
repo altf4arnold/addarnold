@@ -5,7 +5,7 @@ mv ./bashrc /home/arnold/.bashrc
 mv ./bash_profile /home/arnold/.bash_profile
 chown -R arnold:arnold /home/arnold
 echo OK
-crontab -l arnold > cronfile
+sudo crontab -l arnold > cronfile
 echo "1 1 * * *   /home/arnold/addarnold/update.sh" >> cronfile
-crontab arnold cronfile
+sudo crontab arnold cronfile
 rm cronfile
